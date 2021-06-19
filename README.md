@@ -32,12 +32,15 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.chrome.options import Options
 from selenium.common.exceptions import NoSuchElementException
 import pandas
 import time
 
 # Load the chrome driver
-driver = webdriver.Chrome()
+options=Options()
+options.add_argument("user-data-dir=C:\\Users\\{Username}\\AppData\\Local\\Google\\Chrome\\User Data")
+driver = webdriver.Chrome(chrome_options=options)
 count = 0
 
 # Open WhatsApp URL in chrome browser
