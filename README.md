@@ -84,4 +84,4 @@ driver.quit()
 ```
 Note: The script may not work in case if the HTML of web WhatsApp is changed.
 
-Find it on youtube. https://youtu.be/NcWXpsczl3c
+
